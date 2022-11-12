@@ -5,9 +5,9 @@
 var repeatedCharacter = function(s) {
     arr = []
     for(let i = 0; i < s.length; i++) {
-        if(!arr.includes(s[i])) {
-            arr.push(s[i])
-        } else return s[i]
+        if(arr.includes(s[i])) {
+            return s[i]
+        } else arr.push(s[i])
     }
     
 };
